@@ -50,9 +50,7 @@ $hostname = gethostname();
 // Effectuer une requête HTTP pour récupérer les données
 $response = file_get_contents($api_url);
 
-$remote_url = 'https://ip.amia.fr/receivip.php';
-
-//$remote_url = 'http://localhost/ip/receivip.php';
+$remote_url = 'http://localhost/ip/receivip.php';
 
 // Vérifier si la requête a réussi
 if ($response !== false) {
@@ -121,7 +119,7 @@ echo 'http://' . $public_ip."";
  
 $servername = "localhost";
 $username = "htmc";
-$password = "gjetfm26";
+$password = "xxxxxxx-x";
 $dbname = "ip_db";
  
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -180,7 +178,7 @@ Index.php ^ showip.php
  
 $servername = "localhost";
 $username = "htmc";
-$password = "gjetfm26";
+$password = "xxxxxxx-x";
 $dbname = "ip_db";
  
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -258,6 +256,8 @@ $conn->close();
 Ouvrez la crontab avec la commande suivante :
 
 $   crontab -e
+ou 
+$ EDITOR=nano crontab -e
 
 Ajoutez une ligne à votre crontab pour définir le moment où vous souhaitez que le script s'exécute. Par exemple, pour exécuter le script toutes les heures, ajoutez la ligne suivante :
 
